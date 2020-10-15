@@ -1,0 +1,153 @@
+/*----------
+Body
+-----------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #eee;
+    background-color: rgb(84, 192, 84);
+    margin: 0;
+}
+
+
+/*----------
+Header/Nav
+-----------*/
+
+.name {
+    font-size: 1.35em;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.main-nav a:hover {
+    color: rgb(120, 150, 12);
+}
+
+.name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #eee;
+    text-decoration: none;
+}
+
+
+/*----------
+Div/Containers
+-----------*/
+
+.main-header {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.home {
+    color: #eee;
+    background: lightslategray;
+    padding: 3.2em 0;
+    margin-bottom: 48px;
+}
+
+.home,
+.contact,
+.main-footer {
+    text-align: center;
+}
+
+.main-footer {
+    background: lightslategrey;
+    padding: 2em 0;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.20em;
+    text-align: center;
+}
+
+span {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/*----------
+Media
+-----------*/
+
+.main-pic {
+    width: 190px;
+}
+
+.headline {
+    margin-bottom: 0;
+}
+
+/* Add background img. Then make elements that are grey 
+now into the green that's currently being used.*/
+
+/*----------
+Base Styles
+-----------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact {
+    flex: 1;
+}
+
+/*----------
+Media Queries
+-----------*/
+
+@media (min-width: 769px) {
+    .main-header, 
+    .main-nav, 
+    .row {
+        display: flex;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1025px){
+    .main-header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Add a query to make main-img shrink at smaller sizes. */
+
+/*----------
+Notes
+-----------*/
+
+/*Add in checkbox to contact form. Games, tricks, or resources(?)*/

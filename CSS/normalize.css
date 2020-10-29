@@ -20,17 +20,17 @@
    * Remove the margin in all browsers.
    */
   
-  body {
+  /* body {
     margin: 0;
-  }
+  } */
   
   /**
    * Render the `main` element consistently in IE.
    */
   
-  main {
+  /* main {
     display: block;
-  }
+  } */
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and

@@ -11,8 +11,8 @@ body {
   min-height: 100vh;
   font-family: Helvetica, Geneva, Verdana, sans-serif;
   line-height: 1.5em; 
-  background-image: linear-gradient(to bottom right, palegreen, rgb(235, 144, 235));
-  margin: 0;    
+  background-image: linear-gradient(to bottom right, palegreen, rgb(87, 206, 40));
+     
 }
 
 footer {

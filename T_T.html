@@ -1,44 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" class="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Trick Tracker</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script src="T_T.js"></script>
+    <!-- <script src="T_T.js"></script> -->
 </head>
 <body> 
-    <header>
+    <header class="main_header">
+
+        <img class="site_logo" src="IMG/rosie_2.jpg" alt="Dog with a ball in her mouth.">
+
+        <h1 class="site_name"><a href="home">Trick Tracker</a></h1>
+
         <ul class="nav">
             <li><a href="home">Home</a></li>
-            <li><a href="#">Tricks</a></li>
-            <li><a href="#">Games</a></li>
+            <li><a href="tt_videopg.html">Tricks</a></li>
+            <li><a href="tt_gamespg.html">Games</a></li>
+            <li><a href="#">Resources</a></li>
             <li><a href="#">Contact</a></li>
         </ul> 
-        <h1><a href="home">Trick Tracker</h1>
+
+
     </header>
 
-    <div class="home">
-        <img class="dogAvatar" src="IMG/rosie_2.jpg" alt="Dog with a ball in her mouth.">
-        <h2 class="headline">A Trick Tracker for Your Dog</h2>
-        <span class="tagline">Looking for an all in one place to find and track new tricks?</span>
-    </div>
-    <div class=main_content>
-    <div class="tricks">
-        <h2 class="trick-text">From the basics to more advanced.</h2>
+    <div class="main_content">
+
+    <div class="site_info">
+        <h2 class="tagline">Track Your Dog's Progress</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae magna malesuada, semper nunc quis, euismod arcu. Proin bibendum luctus elit, non molestie risus. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna. Fusce molestie placerat nunc, sed porttitor nunc vestibulum at. Sed commodo massa nisl, id imperdiet orci lobortis vitae. Ut sed dapibus dolor.</p>
+    </div>
+
+    <div class="tricks">
+        <header class="trick-text"> Learn some new tricks.</header>
+        <p>Tricks & videos. Videos videos videos and tricks. Tricks, tricks videos tricks. </p>
 
     </div>
     <div class="games">
-        <h2 class="game-text">Beat the boredom.</h2>
-        <p>In quis ante varius arcu vestibulum lacinia. Nulla dictum condimentum nisl, eu vehicula massa. Donec dignissim sagittis est, sit amet commodo urna viverra sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam condimentum dui leo, vitae auctor libero malesuada et. Praesent ac efficitur diam, sed consequat justo.</p>
+        <header class="game-text">Beat the boredom.</header>
+        <p>Games. Games games games. Games, games games! Games and games. </p>
     </div>
     </div>
 
     <div class="contact">
+
         <h2>Contact</h2>
+
         <form>
+
         <label for="name">Name</label>
         <input type="text" id="name" name="user_name">
         <label for="email">Email</label>
@@ -51,12 +62,17 @@
 
     </div>
 </body>
+
 <footer>
-    <ul class="social">
-    <li><img src="https://img.icons8.com/material-two-tone/48/000000/facebook-new.png"/></li>
-    <li><img src="https://img.icons8.com/material-two-tone/48/000000/instagram-new.png"/></li>
-    <li><img src="https://img.icons8.com/material-two-tone/48/000000/twitter.png"/></li>
+
+    <ul class = "social">
+    <li><img src="https://img.icons8.com/material-two-tone/48/000000/facebook-new.png" alt="Facebook icon."/></li>
+    <li><img src="https://img.icons8.com/material-two-tone/48/000000/instagram-new.png" alt="Instagram icon."/></li>
+    <li><img src="https://img.icons8.com/material-two-tone/48/000000/twitter.png" alt="Twitter icon."/></li>
     </ul>
+
     <span>&copy;2020 Trick Tracker</span>
+
 </footer>
+
 </html>

@@ -1,170 +1,172 @@
 /*------------------------------
 All Sizes
 --------------------------------*/
+* {
+    box-sizing: border-box;
+  }
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-} 
-
-/* body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.6; 
-    background-color: palegreen;
+    font-family: Helvetica, Geneva, Verdana, sans-serif;
+    line-height: 1.5em; 
+    background-image: linear-gradient(to bottom right, palegreen, rgb(235, 144, 235));
     margin: 0;    
-} */
+  }
 
-/* .bg {
-    background-image: URL("yard_rose.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 
-  /* .nav a:hover {
-    color: rgb(120, 150, 12);
-} */
-
-/* header {
-    padding-top: 5em;
-    padding-bottom: 5em;
-} */
-
-/*.dogAvatar {
-        width: 200px;
-        border-radius: 50%;
-    }
-} */
-
-/* #home {
+a {
     color: white;
-    /* background:gray; */
-    /* padding: 3.2em 0;
-    margin-bottom: 48px;
-} */ 
+    text-decoration: none;
+}
 
-/* div {
+.main-header, 
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav,
+.nav li {
+    display: block;
+    padding: 10px;
+    font-size: 1.1em;
+    color: white;
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.nav a:hover {
+    color: rgb(120, 150, 12);
+}
+
+.nav li:hover {
+    border-bottom-color: white;
+}
+
+.site_name {
+    align-self: center;
+}
+
+.site_logo {
+    width: 150px;
+    border-radius: 50%;
+    /* align-self: center; */
+}
+
+div {
     font-size: 1em;
     color: white;
     text-decoration: none;
-} */
+    text-align: center;
+}
+
+.site_info {
+    border: 1px solid white;
+}
+
+.tricks {
+    border: 1px solid white;
+}
+
+.games {
+    border: 1px solid white;
+}
 
 
-/* footer {
+footer {
     background:grey;
-    padding: 2em 0;
-    margin-top: 10px;
     color: white;
     font-size: x-small;
-    text-align: center;
-    height: 40px;
-} */
-/*flex to push footer to bottom of pg.*/
+    /* text-align: center; */
+}
 
-/* .social {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-} */
+footer li {
+    display: inline;
+    margin-left: 5px;
+}
 
-/* h2 {
+
+h2 {
     font-size: 1.20em;
     text-align: center;
-} */
+}
 
-
-
-/*------------------------------
-Mobile
---------------------------------*/
-/* .home,
+.site_name,
+.site_logo,
 .contact,
 footer, 
 span,
 p {
     text-align: center;
-} */
-
-/* h1 {
-    font-size: 2em;
-    margin: 0;
-} */
-
+}
 
 /*------------------------------
 In-Betweens
 --------------------------------*/
-/* @media (min-width: 769px) {
-        h1 a,
-        .nav a {
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px 15px;
-        font-size: 1em;
-        color: white;
-        text-decoration: none;
-    } */
+@media (min-width: 769px) {
+    .main-header {
+        height: 200px;
+        justify-content: flex-end;
+    }
+    
+    .nav,
+    .nav li {
+        flex-direction: row;
+        margin-top: 3em;
+        justify-content: space-between;
+    }
 
-    /* .nav {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-top: 5px;
-    } */
+    .nav li {
+        border-bottom-color: transparent;
+    }
 
-    /* #home {
-            padding: 15px 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-        } */
+    .site_logo {
+        width: 200px;
+    }
+
 }
-
 
 
 /*------------------------------
 Desktop
 --------------------------------*/
-/* @media (min-width: 1025px){
-    .main-nav ul{
-        flex-direction: row;
-        justify-content: space-between;
-    } */
-
-    /* .main_content {
-        display: flex;
-        flex: wrap;
-    } */
-
-    /* .contact {
-        flex-direction: row;
-        justify-content: space-between;
+@media (min-width: 1025px){
+    .main-header {
+        flex-direction: row; align-items; 
     }
 
-    /* .main_content {
+    .site_logo, 
+    .site_name {
+        margin-right: auto;
+    }
+    /*Work with the spacing on this, cause it's 
+    not happening yet. */
+
+    .nav {
+        margin-top: 0;
+    }
+
+    .nav li {
+        margin-left: .65em; 
+        margin-right: .65em;
+    }
+
+    .main_content {
         display: flex;
         flex: wrap;
-    } 
+    }
+    /*Work with this for the 2/1 column look, 
+    so it's 3 cols in total. */
+     
 
-    /* .contact {
-    background: grey;
-    color: white;
-    border-radius: 5px 5px; 
-}  */
-} */
-
+  
 
 /*------------------------------
 Misc
 --------------------------------*/
-/* 
-.headline {
-    margin-bottom: 0;
-} */
 
 
 
@@ -174,3 +176,4 @@ Notes
 /*Add in checkbox to contact form. Games, tricks, or resources(?)*/
 /* Add background img. Then make elements that are grey 
 now into the green that's currently being used.*/
+/*Add box-shadows to all the divs to give some depth against the background.*/

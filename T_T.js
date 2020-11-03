@@ -1,3 +1,11 @@
+//----- To-Dos -----//
+
+//----- Hamburger Menu (<560px) -----//
+
+//----- Loading Gif -----//
+
+//----- Login & Password ----- //
+
 // const password = "LetMeIn";
 // let message = "Nope, that's incorrect.";
 

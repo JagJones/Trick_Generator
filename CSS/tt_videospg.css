@@ -1,31 +1,21 @@
 /*------------------------------
 All Sizes
 --------------------------------*/
-* {
-  box-sizing: border-box;
+
+li {
+  margin-top: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: Helvetica, Geneva, Verdana, sans-serif;
-  line-height: 1.5em; 
-  background-image: linear-gradient(to bottom right, palegreen, rgb(87, 206, 40));
-     
+ul {
+  list-style: none;
 }
 
-footer {
-  background:grey;
+/* div {
+  font-size: 1em;
   color: white;
-  font-size: x-small;
+  text-decoration: none;
   text-align: center;
-}
-
-footer li {
-  display: inline;
-  margin-left: 5px;
-}
+} */
 
 
 
@@ -62,9 +52,24 @@ footer li {
 /*----------------------------
 In Betweens
 ------------------------------*/
+@media(min-width: 769px) {
+  
+  .site_logo,
+  .site_name {
+    display: inline-block;
+    /* flex-direction: column; */
+  }
+  .site_name {
+    align-content: start;
+  }
 
-
-
+  .site_logo {
+    width: 85px;
+    border-radius: 50%;
+    border: 5px solid white;
+    justify-content: left;
+  }
+}
 
 /*----------------------------
 Desktop 

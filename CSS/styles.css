@@ -21,6 +21,12 @@ a {
     text-decoration: none;
 }
 
+/*------------------------------
+Navigation & Burg Menu
+--------------------------------*/
+
+
+
 .main-header, 
 .nav {
     display: flex;

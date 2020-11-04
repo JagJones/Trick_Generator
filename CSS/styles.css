@@ -52,14 +52,17 @@ nav,
     border-bottom-color: white;
 }
 
+
+
 .site_name {
     align-self: center;
 }
 
 .site_logo {
-    width: 150px;
-    border-radius: 50%;
-    border: 5px solid white;
+    border-radius:50% 50% 0 0;
+    height:150px; 
+    width:150px;
+    border: 3px solid white;
     justify-content: left;
 }
 

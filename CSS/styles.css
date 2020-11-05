@@ -1,6 +1,4 @@
-/*------------------------------
-All Sizes
---------------------------------*/
+/*--- General Styling ---*/
 * {
     box-sizing: border-box;
   }
@@ -11,60 +9,21 @@ body {
     min-height: 100vh;
     font-family: Helvetica, Geneva, Verdana, sans-serif;
     line-height: 1.5em; 
-    background-image: linear-gradient(to bottom right, #98fb98, rgb(87, 206, 40));
+    background-image: linear-gradient(to bottom right, #98fb98, rgb(160, 221, 46));
         
   }
 
+/* @font-face {
+font-family: Lobster;
+src: url(fonts/Lobster.otf);
+} */
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-/*------------------------------
-Navigation & Burg Menu
---------------------------------*/
-
-
-
-.main-header, 
-.nav {
-    display: flex;
-    flex-direction: column;
-}
-
-nav,
-.nav li {
-    display: block;
-    padding: 10px;
-    font-size: 1.1em;
-    color: white;
-    list-style: none;
+/* .active, 
+h2 {
+    font-family: Avner;
+    font-size: 1.20em;
     text-align: center;
-    border-bottom: 1px solid lightgrey;
-}
-
-.nav a:hover {
-    color: rgb(120, 150, 12);
-}
-
-.nav li:hover {
-    border-bottom-color: white;
-}
-
-
-
-.site_name {
-    align-self: center;
-}
-
-.site_logo {
-    border-radius:50% 50% 0 0;
-    height:150px; 
-    width:150px;
-    border: 3px solid white;
-    justify-content: left;
-}
+} */
 
 div {
     font-size: 1em;
@@ -73,12 +32,34 @@ div {
     text-align: center;
 }
 
-.site_info {
-    border: 1px solid white;
+form,
+footer, 
+span,
+p {
+    text-align: center;
 }
 
-header {
-    font-family:  
+/*--- All Links ---*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*--- Name & Logo ---*/
+
+
+
+/*--- Sections/Pgs ---*/
+
+.site_logo {
+    border-radius:50%;
+    width: 215px; 
+    border: 2px solid white;
+    justify-content: left;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .tricks {
@@ -89,6 +70,12 @@ header {
     border: 1px solid white;
 }
 
+.trick-text, 
+.game-text {
+    text: center;
+}
+
+/*--- Contact Form ---*/
 form {
     display: flex;
     flex-direction: column;
@@ -102,14 +89,15 @@ form {
 }
 
 button {
-    width: 15%;
+    width: 20%;
     margin-top: 10px;
     justify-content: center;
 
 }
 
+
+/*--- Footer ---*/
 footer {
-    /* background:grey; */
     color: white;
     font-size: small;
     margin-top: 30px;
@@ -121,41 +109,90 @@ footer li {
     margin-left: 5px;
 }
 
+/*--- Navigation & Burg Menu ---*/
+@media (max-width: 736px) {
+    .nav {
+        overflow: hidden;
+        background-color: rgb(75, 75, 75);
+        position: relative;
+      }
+      
+      /* Hide Links */
+      .nav #myLinks{
+        display: none;
+      }
+      
+      /* Nav Links */
+      .nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      /* Berg Style */
+      .nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Home Link */
+      .active {
+        background-color: #4CAF50;
+        color: white;
+      }
+    }
 
-h2 {
-    font-size: 1.20em;
-    text-align: center;
-}
+/*--- Other @media ---*/
 
-.site_name,
-.site_logo,
-form,
-footer, 
-span,
-p {
-    text-align: center;
-}
-
-/*Add the burg menu for <~560. */
-
-/*------------------------------
-In-Betweens
---------------------------------*/
-@media (min-width: 769px) {
-    .main-header {
-        height: 200px;
-        justify-content: flex-end;
+/* Nav Main */
+@media (min-width: 737px) {
+    header {
+        display: flex;
     }
     
-    .nav,
-    .nav li {
-        flex-direction: row;
-        margin-top: 3em;
-        justify-content: space-between;
+    .active {
+        font-size: 50px;
+        font-weight: bold;
+        flex: left;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-left: 0;
     }
 
-    .nav li {
-        border-bottom-color: transparent;
+    /* .nav, */
+    #myLinks {
+        /* display: block; */
+        padding: 10px;
+        font-size: 1.1em;
+        color: white;
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid white;
+        margin-top: 3em;
+        flex: right;
+        /* flex-direction: row; */
+        justify-content: space-around;
+    }
+
+
+    .nav a:hover {
+        background: lightgrey;
+        color: rgb(120, 150, 12);
+    } 
+    
+    #myLinks:hover {
+        background: lightgrey;
+        color: rgb(120, 150, 12);
     }
 
     .site_logo {
@@ -166,19 +203,16 @@ In-Betweens
 }
 
 
-/*------------------------------
-Desktop
---------------------------------*/
+/*--- Desktop ---*/
 @media (min-width: 1025px){
     .main-header {
         flex-direction: row; 
      
     }
 
-    .site_logo, 
-    .site_name {
+    /* .site_logo {
         margin-right: auto;
-    }
+    } */
     /*Work with the spacing on this, cause it's 
     not happening yet. */
 
@@ -186,15 +220,25 @@ Desktop
         margin-top: 0;
     }
 
-    .nav li {
+    #myLinks {
         margin-left: .65em; 
         margin-right: .65em;
     }
 
     .main_content {
         display: flex;
+    }
+
+    .site_info {
         flex: wrap;
     }
+
+    .site_info,
+    .tricks, 
+    .games {
+        flex: 3;
+    }
+
     /*Work with this for the 2/1 column look, 
     so it's 3 cols in total. */
      

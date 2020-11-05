@@ -120,7 +120,7 @@ footer li {
 }
 
 /*--- Navigation & Burg Menu ---*/
-@media (max-width: 736px) {
+/* @media (max-width: 736px) {
     .nav {
         overflow: hidden;
         background-color: rgb(75, 75, 75);
@@ -128,53 +128,52 @@ footer li {
       }
       
       /* Hide Links */
-      .nav #myLinks{
+      /* .nav #myLinks{
         display: none;
       }
-      
+       */
       /* Nav Links */
-      .nav a {
+      /* .nav a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
-      }
+      } */
       
       /* Berg Style */
-      .nav a.icon {
+      /* .nav a.icon {
         background: black;
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-      }
+      } */
       
-      .nav a:hover {
+      /* .nav a:hover {
         background-color: #ddd;
         color: black;
-      }
+      } */
       
       /* Home Link */
-      .active {
+      /*.active {
         background-color: #4CAF50;
         color: white;
       }
-    }
+    } */
 
 /*--- Other @media ---*/
 
 /* Nav Main */
 @media (min-width: 737px) {
     header {
-        display: flex;
+        display: inline;
         width: 100%;
     }
     
-    .site_name {
+    .active {
         font-size: 50px;
         font-weight: bold;
-        flex: left;
         padding-top: 10px;
         margin-top: 15px;
         margin-left: 0;
@@ -182,14 +181,14 @@ footer li {
 
     /* .nav, */
     #myLinks {
-        /* display: block; */
         padding: 10px;
         font-size: 1.1em;
         color: white;
         list-style: none;
         /* text-align: center; */
-        border-bottom: 1px solid white;
-        margin-top: 3em;
+        border-bottom: 2mm ridge rgba(213, 247, 186, 0.6);
+        margin-top: 5px;
+        margin-bottom: 35px;
         flex: right;
         /* flex-direction: row; */
         justify-content: space-around;
@@ -242,6 +241,7 @@ footer li {
         flex-direction: column;
         align-content: center;
         flex-basis: 25%;
+        height: 35%;
         
     }
 

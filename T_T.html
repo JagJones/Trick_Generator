@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Trick Tracker</title>
+    <title>Trick Generator</title>
     <!-- <link rel="stylesheet" href="CSS/normalize.css"> -->
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="T_T.js"></script>
@@ -12,18 +12,19 @@
     <header>
         <!-- Top Navigation Menu -->
         <div class="nav">
-            <a href="T_T.html" class="active">Trick Tracker</a>
+            <a href="T_T.html" class="active site_name">Trick Generator</a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-            <a href="tt_videopg.html">Tricks & Games</a>
-            <a href="#">Resources</a>
+            <a href="#tricks">Tricks</a>
+            <a href="#games">Games</a>
+            <a href="#resources">Resources</a>
             <a href="#contact">Contact</a>
             </div>
             <!-- Burg Menu (JS) -->
-            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="burgNav()">
             <i class="fa fa-bars"></i>
             </a>
-        </div> -->
+        </div>
 
 
     </header>
@@ -31,48 +32,79 @@
     <div class="main_content">
 
     <div class="site_info">
-        <h2 class="tagline">Track Your Dog's Progress</h2>
+        <h2 class="tagline">Find New Tricks for Your Dog!</h2>
         <img class="site_logo" src="IMG/rosie_2-min.jpg" alt="Dog with a ball in her mouth.">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae magna malesuada, semper nunc quis, euismod arcu. 
             Proin bibendum luctus elit, non molestie risus. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna. Fusce molestie 
             placerat nunc, sed porttitor nunc vestibulum at. Sed commodo massa nisl, id imperdiet orci lobortis vitae. Ut sed dapibus dolor.</p>
-        <br>
+        
+            <span class="dot"></span>
+        
         <p>Tricks & videos. Videos videos videos and tricks. Tricks, tricks videos tricks. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae magna malesuada, semper nunc quis, euismod arcu. 
             Proin bibendum luctus elit, non molestie risus. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna.</p>
-        <br>
+        
+            <span class="dot"></span>
+
         <p>Games. Games games games. Games, games games! Games and games Nam lacus ex, iaculis ut venenatis at, vehicula eu urna. Fusce molestie 
             placerat nunc, sed porttitor nunc vestibulum at. Sed commodo massa nisl, id imperdiet orci lobortis vitae. Ut sed dapibus dolor.<p>
     </div>
 
     <div class="tricks">
-        <header class="trick_text"> Learn some new tricks.</header>
+        <h3 class="trick_text">Tricks</h3>
         <p>Tricks & videos. Videos videos videos and tricks. Tricks, tricks videos tricks. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna. Fusce molestie 
             placerat nunc, sed porttitor nunc vestibulum at. Sed commodo massa nisl, id imperdiet orci lobortis vitae. Ut sed dapibus dolor.</p>
+        
+        <span class="dot"></span>
+
+        <p>Learn a New Trick!</p>
+        <button onclick="myFunction()" type="button">Randomize</button>
+    
+        <script>
+            function myFunction() {
+                window.open("mynewpage.html");
+            }
+            </script>
 
     </div>
     <div class="games">
-        <header class="game_text">Beat the boredom.</header>
-        <p>Games. Games games games. Games, games games! Games and games. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae magna malesuada, semper nunc quis, euismod arcu. 
+        <h3 class="game_text" id="trick_button">Beat the Boredom.</h3>
+        <p>Games. Games games & videos, games. Games, games games! Games and games. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae magna malesuada, semper nunc quis, euismod arcu. 
             Proin bibendum luctus elit, non molestie risus. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna.</p>
+            
+        <span class="dot"></span>
+        
+        <p>Learn a New Game!</p>
+        <button onclick="myFunction()" type="button" id= "game_button">Randomize</button>
+    
+        <script>
+            function myFunction() {
+                window.open("mynewpage.html");
+            }
+            </script>
+    
     </div>
     </div>
 
+
     <div>
-        <!-- Add video list here. -->>
+        <!--- Add resources as an aside here. 
+            Have JS randomly display diff. articles.-->
     </div>
 
     <div class="contact">
 
         <h2>Contact</h2>
+        <p>Have a suggestion for more content?</p>
 
         <form>
 
-        <label for="name">Name</label>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="user_name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="user_email">
-
-        <label for="comment">Comments</label>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="user_email">
+        <label for="email">Description:</label>
+        <input type="text" id="reason" name="user_reason">
+        <label for="comment">Comments:</label>
         <textarea id="user_comments" name="user_comments"></textarea>
     
         <button type="submit">Submit</button>

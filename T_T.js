@@ -11,10 +11,10 @@ function burgNav() {
   }
 
 //--- Generators ---//
-//--- CLicking the buttons should open a random video from a predetermied list.--//
+//--- Clicking the buttons should open a random video from a predetermied list.--//
 $(document).ready(function() {
 
-    var videos = [
+    var trickVid = [
     'KyY5yJw8Sbg',
     'Te4wx4jtiEA',
     'efTj6UYzvk4'
@@ -24,7 +24,7 @@ $(document).ready(function() {
     var html='<div id="video"><h3>Random Video</h3><iframe width="720" height="480" src="http://www.youtube.com/embed/ ' + videos[index] + ' + "&autoplay=1" " frameborder="0" allowfullscreen></iframe></div>';
     document.write(html);
     
-    });//-->
+    });
 
 //--- Loading Gif ---//
 

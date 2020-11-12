@@ -14,17 +14,21 @@ function burgNav() {
 //--- Clicking the buttons should open a random video from a predetermied list.--//
 $(document).ready(function() {
 
-    var trickVid = [
+function playRandoTrick() {
+    var trickVids = [
     'KyY5yJw8Sbg',
     'Te4wx4jtiEA',
     'efTj6UYzvk4'
     ];
     
-    var index=Math.floor(Math.random() * videos.length);
+    var index=Math.floor(Math.random() * trickVids);
     var html='<div id="video"><h3>Random Video</h3><iframe width="720" height="480" src="http://www.youtube.com/embed/ ' + videos[index] + ' + "&autoplay=1" " frameborder="0" allowfullscreen></iframe></div>';
     document.write(html);
     
     });
+
+    var mywin = window.open(...); 
+    mywin.somearray = [1,2,3];
 
 //--- Loading Gif ---//
 

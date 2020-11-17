@@ -1,7 +1,9 @@
-/*--- Styling ---*/
+/*--- Main Styles ---*/
 * {
     box-sizing: border-box;
   }
+
+
 
 body {
     display: flex;
@@ -13,18 +15,9 @@ body {
         
   }
 
-/* @font-face {
-font-family: Lobster;
-src: url(fonts/Lobster.otf);
-} */
 
 
-footer, 
-span {
-    text-align: center;
-}
-
-/*--- Link & Div Styles---*/
+/*--- Link & Divs ---*/
 div {
     font-size: 1em;
     color: white;
@@ -40,7 +33,7 @@ a {
 
 .site_logo {
     border-radius:15%;
-    width: 16em; 
+    width: 12em; 
     border: 2px solid white;
     padding: 5px;
     margin-bottom: 15px;
@@ -73,8 +66,13 @@ a {
     margin-top: 5px;
 }
 
+.tricks,
+.games {
+    box-shadow: 5px 5px 10px rgb(68, 99, 12)
+}
+
 .tricks:first-child, 
-.games: {
+.games:first-child {
     font-weight: bolder;
     padding: 10px;
 
@@ -82,6 +80,11 @@ a {
 
 p {
     margin: 15px;
+}
+
+.tricks button,
+.games button {
+    align-content: flex-end;
 }
 
 /*--- Contact Form ---*/
@@ -96,13 +99,13 @@ form {
     flex-direction: column;
     padding: 10px;
     margin-top: 5px;
-    background-color: rgb(56, 54, 54);
+    background-color: rgb(70, 67, 67);
     border: 1px solid white;
     border-radius: 2%;
     width: 30%;
     height: 23em; 
     font-weight: bold;
-    /*Mess with box shadows.*/
+    box-shadow: 5px 5px 10px rgb(68, 99, 12)
 }
 
 input[type="text"]{
@@ -111,7 +114,8 @@ input[type="text"]{
 
 }
 #user_comments {
-    padding: 3em;
+    width: 150;
+    height: 120px;
     background-color: lightgrey;
 }
 
@@ -131,25 +135,41 @@ button {
     background-color: rgb(160, 221, 46);
 }
 
+button:hover {
+    background-color:rgb(201, 154, 194);
+}
+
 /*--- Footer ---*/
+
 footer {
     color: white;
     font-size: small;
     margin-top: 30px;
-    /* text-align: center; */
 }
 
 footer li {
     display: inline;
-    margin-left: 5px;
+}
+
+footer, 
+span {
+    text-align: center;
+}
+
+.social {
+    padding-right: 5em;
+    margin-left: 5px; 
 }
 
 /*--- Burg Nav ---*/
-@media (max-width: 736px) {
+@media (max-width: 724px) {
     .nav {
         overflow: hidden;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(85, 80, 85);
         position: relative;
+        margin-left: .3em;
+        margin-right: .3em;
+        box-shadow: 5px 5px 10px rgb(68, 99, 12)
       }
       
       /* Hide Links */
@@ -162,7 +182,7 @@ footer li {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 15px;
         display: block;
       } 
       
@@ -176,87 +196,103 @@ footer li {
       } 
       
       .nav a:hover {
-        background-color: #ddd;
+        background-color:rgb(201, 154, 194);
         color: black;
       } 
       
       /* Home Link */
       .active {
-        background-color: #4CAF50;
+        background-color:  rgb(65, 53, 63);
         color: white;
-        font-size: 15px;
+        font-size: 35px;
         font-weight: bold;
       }
     } 
 
-/*--- Other @media ---*/
+/*--- @media (725px)---*/
 
-/*-- Nav Main --*/
-@media (min-width: 737px) {
-    header {
-        display: column
-        width: 100%;
-    }
-    
-    .nav {
-        /* flex-direction: column; */
-        text-align: center;
-    }
+/* Nav Main */
+@media (min-width: 725px) {
+ 
+header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    height: 10%;
+    margin: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(70, 67, 67);
+    box-shadow: 5px 5px 10px rgb(68, 99, 12)
+}
 
-    .active {
-        font-size: 20px;
-        font-weight: bold;
-    }
+.site_name {
+    font-size: 30px;
+    font-weight: bold;
+}
 
-    #myLinks {
-        text-align: center;
-    }
+#myLinks a {
+    display: block;
+    padding: 8px;
+    font-size: 1.1em;
+    color: white;
+    list-style: none;
+    text-align: center;
+    /* border-bottom: 1px solid white; */
+}
         
-    #myLinks:hover {
-        color: rgb(120, 150, 12);
+    #myLinks a:hover {
+        color:rgb(201, 154, 194);
     }
 }
 
+#myLinks a:nth-child(-1n+2) {
+    border-bottom: 1px solid rgb(211, 210, 210);
+} 
 
-/*--- Desktop ---*/
+/* Sections */
+
+
+
+
+/*--- @media (1025px)---*/
+
 @media (min-width: 1025px){
+
+    /* Nav Main */
     header {
-        flex-direction: row; 
+        display: flex;
     }
 
     .active {
-        font-size: 50px;
+        font-size: 55px;
         color: white;
         font-weight: bold;
-        padding-top: ;
-        margin-bottom: 0;
-        margin-left: 0;
+        text-align: left;
         text-decoration: none;
     } 
  
-    #myLinks {
+    #myLinks a{
         padding: 5px;
         font-size: 1.5em;
         text-align: right;
-        border-bottom: 2px white solid;
+        /* border-bottom: 2px white solid; */
         margin-top: 5px;
         margin-bottom: 35px;
-        position: right;
-        /* flex: right; */
-        /* flex-direction: row; */
+        flex-direction: row;
        /* justify-content: space-between; */
     } 
 
-
+/* Sections */
     .main_content {
         display: flex;
-        width: 90%;
+        /* flex-direction: column; */
+        width: 95%;
         margin: 0 auto;
     }
 
     .site_info {
-        flex: wrap;
-        flex-direction: row;
+        flex: wrap; 
         flex-basis: 50%;
     }
 
@@ -264,13 +300,20 @@ footer li {
     .games {
         flex-direction: column;
         align-content: center;
-        flex-basis: 25%;
-        height: 35%;
+        flex-basis: 25%; 
     }
 
+    .tricks {
+        margin-top: .3em;
+        margin-right: .5em;
+        height: 22%;
+    }
 
+    .games {
+        height: 20%;
+    }
 
-/*----------
-Notes
------------*/
-/*Add box-shadows to all the divs to give some depth against the background.*/
+    .site_logo {
+        width: 16em;
+    }
+}

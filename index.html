@@ -2,25 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trick Generator</title>
-    <!-- <link rel="stylesheet" href="CSS/normalize.css"> -->
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script src="T_T.js"></script>
+   
 </head>
 <body> 
     <header>
-        <!-- Top Navigation Menu -->
+        
         <div class="nav">
             <a href="index.html" class="active site_name">Trick Generator</a>
-            <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
             <a href="#tricks">Tricks</a>
             <a href="#games">Games</a>
-            <a href="#resources">Resources</a>
             <a href="#contact">Contact</a>
             </div>
-            <!-- Burg Menu (JS) -->
+            <!-- Burg Menu -->
             <a href="javascript:void(0);" class="icon" onclick="burgNav()">
             <i class="fa fa-bars"></i>
             </a>
@@ -49,47 +47,33 @@
             placerat nunc, sed porttitor nunc vestibulum at. Sed commodo massa nisl, id imperdiet orci lobortis vitae. Ut sed dapibus dolor.<p>
     </div>
 
-    <div class="tricks">
+    <div class="tricks" id="tricks">
         <h3 class="trick_text">Tricks</h3>
         <p>Tricks & videos. Videos videos videos and tricks. Tricks, tricks videos tricks. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna. Fusce molestie 
             placerat nunc, sed porttitor nunc vestibulum at. Sed commodo massa nisl, id imperdiet orci lobortis vitae. Ut sed dapibus dolor.</p>
         
         <span class="dot"></span>
-
+        
+        <!-- Trick Generating Button -->
         <p>Learn a New Trick!</p>
-        <button onclick="playRandomTVids(ytLink)" type="button" id="trick_button">Randomize</button>
-    
-        <!-- <script>
-            function playRandomTVid() 
-            </script> -->
+        <button onclick="playRandomTVid()" type="button" id="trick_button">Randomize</button>
 
     </div>
-    <div class="games">
+    <div class="games" id="games">
         <h3 class="game_text">Beat the Boredom.</h3>
         <p>Games. Games games & videos, games. Games, games games! Games and games. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae magna malesuada, semper nunc quis, euismod arcu. 
-            Proin bibendum luctus elit, non molestie risus. Nam lacus ex, iaculis ut venenatis at, vehicula eu urna.</p>
+            Proin bibendum luctus elit, non molestie risus. Nam lacus ex, iaculis ut venenatis at, vehicula.</p>
             
         <span class="dot"></span>
         
+        <!-- Game Generating Button -->
         <p>Learn a New Game!</p>
-        <button onclick="openGVids()" type="button" id="game_button">Randomize</button>
-    
-        <script>
-            function openGVids() {
-                window.open("mynewpage.html");
-            }
-            </script>
-    
+        <button onclick="playRandomGVid()" type="button" id="game_button">Randomize</button>
+
     </div>
     </div>
 
-
-    <div>
-        <!--- Add resources as an aside here. 
-            Have JS randomly display diff. articles.-->
-    </div>
-
-    <div class="contact">
+    <div class="contact" id="contact">
 
         <h2>Contact</h2>
         <p>Have a suggestion for more content?</p>
@@ -105,7 +89,7 @@
         <label for="comment">Comments:</label>
         <textarea id="user_comments" name="user_comments"></textarea>
     
-        <button type="submit">Submit</button>
+        <button onclick="" type="submit">Submit</button>
     </form>
 
     </div>
@@ -123,6 +107,7 @@
 
 </footer>
 
+<script src="T_T.js"></script>
 </body>
 
 </html>

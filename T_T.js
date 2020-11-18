@@ -39,8 +39,13 @@ function playRandomGVid() {
   window.open(`https://www.youtube.com/embed/${gameVids[randomInt]}`)
 }
 
-//--- Buttons ---//
+//--- Contact Form ---//
 
-
-
-
+function confirmInfo() {
+  let input = document.getElementById("email").value.length;
+  if (input == 0) {
+    alert("Please enter an email.");
+    return false;
+  }
+}
+  

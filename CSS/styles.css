@@ -3,7 +3,14 @@
     box-sizing: border-box;
   }
 
-
+  @font-face {
+    font-family: "Lobster 1.4";
+    src: url("fonts/Lobster.ttf");
+    src:
+    url("fonts/Lobster.woff") format("woff"),
+    url("fonts/Lobster.otf") format("opentype"),
+    url("fonts/Lobster.svg#filename") format("svg");
+    }
 
 body {
     display: flex;
@@ -52,6 +59,7 @@ a {
 
 /*--- Sections/Pgs ---*/
 .site_info {
+    font-family: 'Lobster 1.4', ;
     text-align: center;
 }
 
@@ -261,7 +269,7 @@ header {
 
     /* Nav Main */
     header {
-        display: flex;
+        display: inline-block;
     }
 
     .active {

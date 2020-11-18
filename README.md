@@ -26,6 +26,7 @@ It's also meant to both look and act in a minimalistic manner.
 ```
 . function burgNav() was created for the hamburger navigation. 
 . function playRandomTVid()/playRandomGVid() were created to open a new window once either button was clicked. Then a random video plays from an array.
+. function confirmInfo() was created to confirm the email field on the contact form is submitted with a value.
 
 ```
 ## Other Features: 

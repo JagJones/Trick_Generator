@@ -49,30 +49,22 @@ a {
 }
 
 /*--- Sections/Pgs ---*/
-.main_content {
-    display: flex;
-    flex-direction: column;
-}
-
-.site_info {
+.about {
+    display: block;
     text-align: center;
-}
-
-.tricks {
-    border: 1px solid white;
-    text-align: center;
-}
-
-.games {
-    border: 1px solid white;
-    text-align: center;
-    margin-top: 5px;
+    margin-bottom: 3em;
 }
 
 .tricks,
 .games {
+    border: 1px solid white;
+    text-align: center;
     margin-left: 15px;
     box-shadow: 5px 5px 10px rgb(68, 99, 12)
+}
+
+.games {
+    margin-top: 5px;
 }
 
 .tricks:first-child, 
@@ -112,7 +104,6 @@ input[type="text"]{
 
 }
 #user_comments {
-    width: 150;
     height: 120px;
     background-color: lightgrey;
 }
@@ -215,7 +206,6 @@ span {
 .nav, 
 #myLinks {
         display: flex;
-        background-color: none;
     }
 
 .nav {
@@ -269,36 +259,31 @@ header {
     }
 
     .active {
-        font-size: 45px;
+        font-size: 1.6em;
         margin-left: 200px;
     } 
  
-    #myLinks a{
+    #myLinks a {
         padding: 5px;
-        font-size: 1.5em;
+        font-size: 1.2em;
     } 
 
 /* Sections */
 
-    .site_info {
+    .about {
         margin-left: 25px;
         margin-right: 25px;
     } 
 
-    /* .tricks,
-    .games {
+    .content {
         display: flex;
-        flex-direction: row;
-        flex: 1;
-        
-    } */
-
-    /* .tricks {
-        width: 45%;
+        flex-direction: column;
     }
+
+    .tricks,
     .games {
-        width: 45%;
-    } */
+        flex: 1;
+    }
 
     .site_logo {
         width: 16em;

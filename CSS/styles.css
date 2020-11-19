@@ -3,15 +3,6 @@
     box-sizing: border-box;
   }
 
-  @font-face {
-    font-family: "Lobster 1.4";
-    src: url("fonts/Lobster.ttf");
-    src:
-    url("fonts/Lobster.woff") format("woff"),
-    url("fonts/Lobster.otf") format("opentype"),
-    url("fonts/Lobster.svg#filename") format("svg");
-    }
-
 body {
     display: flex;
     flex-direction: column;
@@ -19,7 +10,7 @@ body {
     font-family: Helvetica, Geneva, Verdana, sans-serif;
     line-height: 1.5em; 
     background-image: linear-gradient(to bottom right, #98fb98, rgb(160, 221, 46));
-        
+    width: 95%;
   }
 
 
@@ -58,8 +49,12 @@ a {
 }
 
 /*--- Sections/Pgs ---*/
+.main_content {
+    display: flex;
+    flex-direction: column;
+}
+
 .site_info {
-    font-family: 'Lobster 1.4', ;
     text-align: center;
 }
 
@@ -76,6 +71,7 @@ a {
 
 .tricks,
 .games {
+    margin-left: 15px;
     box-shadow: 5px 5px 10px rgb(68, 99, 12)
 }
 
@@ -83,16 +79,10 @@ a {
 .games:first-child {
     font-weight: bolder;
     padding: 10px;
-
 }
 
 p {
     margin: 15px;
-}
-
-.tricks button,
-.games button {
-    align-content: flex-end;
 }
 
 /*--- Contact Form ---*/
@@ -204,7 +194,7 @@ span {
       } 
       
       .nav a:hover {
-        background-color:rgb(201, 154, 194);
+        background-color:rgb(124, 111, 122);
         color: black;
       } 
       
@@ -222,15 +212,23 @@ span {
 /* Nav Main */
 @media (min-width: 725px) {
  
-header {
-    display: flex;
+.nav, 
+#myLinks {
+        display: flex;
+        background-color: none;
+    }
+
+.nav {
     flex-direction: column;
-    padding-top: 2em;
+    align-items: center;
+}
+
+header {
+    padding-top: 1em;
     height: 10%;
-    margin: 55px;
     margin-bottom: 20px;
-    text-align: center;
-    background-color: rgb(70, 67, 67);
+    font-size: 20px;
+    background-color: rgb(160, 221, 46);
     box-shadow: 5px 5px 10px rgb(68, 99, 12)
 }
 
@@ -240,27 +238,22 @@ header {
 }
 
 #myLinks a {
-    display: block;
     padding: 8px;
     font-size: 1.1em;
     color: white;
     list-style: none;
-    text-align: center;
-    /* border-bottom: 1px solid white; */
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
         
     #myLinks a:hover {
-        color:rgb(201, 154, 194);
+        color:rgb(124, 111, 122);
     }
 }
 
 #myLinks a:nth-child(-1n+2) {
-    border-bottom: 1px solid rgb(211, 210, 210);
-} 
-
-/* Sections */
-
-
+    border-right: 1px solid white;
+}
 
 
 /*--- @media (1025px)---*/
@@ -268,58 +261,44 @@ header {
 @media (min-width: 1025px){
 
     /* Nav Main */
-    header {
-        display: inline-block;
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 2px;
     }
 
     .active {
-        font-size: 55px;
-        color: white;
-        font-weight: bold;
-        text-align: left;
-        text-decoration: none;
+        font-size: 45px;
+        margin-left: 200px;
     } 
  
     #myLinks a{
         padding: 5px;
         font-size: 1.5em;
-        text-align: right;
-        /* border-bottom: 2px white solid; */
-        margin-top: 5px;
-        margin-bottom: 35px;
-        flex-direction: row;
-       /* justify-content: space-between; */
     } 
 
 /* Sections */
-    .main_content {
-        display: flex;
-        /* flex-direction: column; */
-        width: 95%;
-        margin: 0 auto;
-    }
 
     .site_info {
-        flex: wrap; 
-        flex-basis: 50%;
-    }
+        margin-left: 25px;
+        margin-right: 25px;
+    } 
 
-    .tricks, 
+    /* .tricks,
     .games {
-        flex-direction: column;
-        align-content: center;
-        flex-basis: 25%; 
-    }
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        
+    } */
 
-    .tricks {
-        margin-top: .3em;
-        margin-right: .5em;
-        height: 22%;
+    /* .tricks {
+        width: 45%;
     }
-
     .games {
-        height: 20%;
-    }
+        width: 45%;
+    } */
 
     .site_logo {
         width: 16em;

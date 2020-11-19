@@ -160,7 +160,7 @@ span {
 }
 
 /*--- Burg Nav ---*/
-@media (max-width: 724px) {
+@media (max-width: 768px) {
     .nav {
         overflow: hidden;
         background-color: rgb(85, 80, 85);
@@ -207,10 +207,10 @@ span {
       }
     } 
 
-/*--- @media (725px)---*/
+/*--- @media (769px)---*/
 
 /* Nav Main */
-@media (min-width: 725px) {
+@media (min-width: 769px) {
  
 .nav, 
 #myLinks {

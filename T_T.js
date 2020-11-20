@@ -42,10 +42,14 @@ function playRandomGVid() {
 //--- Contact Form ---//
 
 function confirmInfo() {
-  let input = document.getElementById("email").value.length;
-  if (input == 0) {
-    alert("Please enter an email.");
+  let cName = document.getElementById("name").value;
+  let cEmail = document.getElementById("email").value;
+  let cReason = document.getElementById("reason").value;
+  if (cName | cEmail | cReason == 0) {
+    alert("Please fill out all fields.");
     return false;
   }
 }
   
+
+

@@ -3,7 +3,9 @@ Trick_Generator
 
 ## Description:
 ```
-My project is meant to be a mobile-first, ongoing project where content is continually added to the games and tricks sections. (Although at this time if you add something via the contact form it doesn't get added, it's just set up so that down the line that could be made possible.) Clicking either button should generate a random video from it's corresponding category, and should open up in a new web pg.
+This is a mobile-first program, and an ongoing project where content is continually added to the games and tricks sections. 
+    *(Although at this time if you add something via the contact form it doesn't get added, it's just set up so that down the line that could be made possible.) 
+Clicking either button should generate a random video from it's corresponding category, and should open up in a new web pg.
 
 It's also meant to both look and act in a simplistic manner.
 
@@ -40,6 +42,9 @@ This project uses 2 sizes of @media:
     - The image in the main content gets larger. 
     - The divs with with generator buttons break into 2 rows. 
 
-
-
-
+```
+## Future Additions: 
+```
+. Currently the videos are held in lists and can only be added on the backend. There's a few features I'd like to add in the future to better flesh out the program: 
+    - Connect the pg to YouTube's API and be able to scrape in videos from specific channels.
+    - Actually append any user suggested videos onto the lists the current lists.  
